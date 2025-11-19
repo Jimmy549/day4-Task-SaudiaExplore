@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Saudi Arabia's rich heritage, history, and culture. Discover the beauty of the Kingdom.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Imperial+Script&display=swap" rel="stylesheet">
+    <link href="src/output.css" rel="stylesheet">
+    <title>Saudi Arabia</title>
+  </head>
+
+  <body class="font-[Poppins] bg-gray-900 text-white transition-colors duration-300">
+    <header class="relative w-full min-h-screen text-white overflow-hidden">
+      
+      <!-- Background Image -->
+      <div
+        class="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat brightness-[0.45]"
+        style="background-image: url('./img/First img.jpg')"
+      ></div>
+
+      <!-- NAVBAR -->
+      <nav
+        class="relative z-20 flex items-center justify-between px-4 sm:px-6 md:px-8 lg:px-12 py-4 sm:py-6"
+      >
+        <!-- LEFT: LOGO -->
+        <div class="flex flex-col items-start relative z-30">
+          <img src="./img/logo.png" class="w-16 sm:w-20 md:w-24 lg:w-32 h-auto" alt="Saudi Arabia Logo" loading="lazy">
+          <span class="text-xs sm:text-sm tracking-wide -mt-1 opacity-90"></span>
+        </div>
+
+        <!-- RIGHT: THEME TOGGLE + LINKS -->
+        <div class="flex items-center gap-3 sm:gap-4 md:gap-6 text-sm sm:text-base">
+          <button id="theme-toggle" class="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-white/20 backdrop-blur-md border border-white/30 hover:bg-white/30 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/50" aria-label="Toggle theme">
+            <span id="theme-icon" class="text-sm sm:text-lg">🌙</span>
+          </button>
+
+          <nav class="hidden sm:block" role="navigation">
+            <ul class="flex items-center gap-4 md:gap-6 lg:gap-8">
+              <li><a href="#destinations" class="hover:text-gray-300 transition-colors duration-200 text-sm md:text-base">Destinations</a></li>
+              <li><a href="#members" class="hover:text-gray-300 transition-colors duration-200 text-sm md:text-base">Members</a></li>
+              <li><a href="#gallery" class="hover:text-gray-300 transition-colors duration-200 text-sm md:text-base">Gallery</a></li>
+            </ul>
+          </nav>
+        </div>
+      </nav>
+
+      <!-- HERO TITLE -->
+      <div class="relative z-20 flex flex-col items-center text-center mt-8 sm:mt-12 md:mt-16 lg:mt-20 px-4">
+        <h2 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight mb-2 sm:mb-3 md:mb-4">Explore</h2>
+        <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight mb-4 sm:mb-6">Saudi Arabia</h1>
+        <p class="text-sm sm:text-base md:text-lg font-normal text-gray-300 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl mt-2 sm:mt-4 px-2 leading-relaxed">
+          Saudi Arabia is rich in heritage and history. The country is home to hundreds of historically important sites.
+        </p>
+      </div>
+
+      <!-- BOTTOM INFO -->
+      <div class="absolute bottom-4 sm:bottom-6 md:bottom-8 lg:bottom-10 left-1/2 -translate-x-1/2 w-full max-w-6xl z-20 px-4 sm:px-6 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+        <article class="bg-black/30 backdrop-blur-sm rounded-lg p-4 sm:p-6">
+          <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold mb-2 sm:mb-3">History and Heritage</h3>
+          <p class="text-sm sm:text-base font-normal text-gray-300 leading-relaxed">
+            Saudi Arabia has long occupied an important role at the center of the Islamic and Arab worlds. Located at the heart of three continents.
+          </p>
+        </article>
+
+        <article class="bg-black/30 backdrop-blur-sm rounded-lg p-4 sm:p-6">
+          <h3 class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold mb-2 sm:mb-3">People and Culture</h3>
+          <p class="text-sm sm:text-base font-normal text-gray-300 leading-relaxed">
+            Saudi Arabia has a rich culture shaped by the diversity of its people, forming the basis of its cultural identity.
+          </p>
+        </article>
+      </div>
+      
+      <!-- Bottom shadow -->
+      <div class="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-black/100 to-transparent z-10 pointer-events-none"></div>
+    </header>
+
+    <!-- Partners Section -->
+    <section aria-label="Our partners" class="bg-[#040404] py-4 sm:py-6">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <ul class="flex gap-4 sm:gap-6 md:gap-8 items-center justify-center md:justify-between py-4 sm:py-6 overflow-x-auto snap-x snap-mandatory">
+          <li class="shrink-0 snap-center">
+            <img src="./img/Saudia.png" alt="Saudia Airlines" class="h-12 sm:h-14 md:h-16 opacity-90 filter brightness-0 invert-[30%] sepia-[10%] saturate-[200%] hue-rotate-[250deg] contrast-[90%] hover:invert-0 hover:brightness-100 transition-all duration-300" loading="lazy">
+          </li>
+          <li class="shrink-0 snap-center">
+            <img src="./img/Alrajhi bank.png" alt="Al Rajhi Bank" class="h-12 sm:h-14 md:h-16 opacity-90 filter brightness-0 invert-[30%] sepia-[10%] saturate-[200%] hue-rotate-[250deg] contrast-[90%] hover:invert-0 hover:brightness-100 transition-all duration-300" loading="lazy">
+          </li>
+          <li class="shrink-0 snap-center">
+            <img src="img/Almarai.png" alt="Almarai" class="h-12 sm:h-14 md:h-16 opacity-90 filter brightness-0 invert-[30%] sepia-[10%] saturate-[200%] hue-rotate-[250deg] contrast-[90%] hover:invert-0 hover:brightness-100 transition-all duration-300" loading="lazy">
+          </li>
+          <li class="shrink-0 snap-center">
+            <img src="./img/Stc.png" alt="STC Telecommunications" class="h-12 sm:h-14 md:h-16 opacity-90 filter brightness-0 invert-[30%] sepia-[10%] saturate-[200%] hue-rotate-[250deg] contrast-[90%] hover:invert-0 hover:brightness-100 transition-all duration-300" loading="lazy">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Desert Section -->
+    <section class="relative w-full min-h-screen overflow-hidden">
+      <div class="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat" style="background-image: url('./img/middel sun.jpg')"></div>
+      
+      <div class="absolute top-0 left-0 right-0 h-32 sm:h-40 bg-gradient-to-b from-black/100 to-transparent pointer-events-none z-10"></div>
+      <div class="absolute bottom-0 left-0 right-0 h-40 sm:h-52 bg-gradient-to-t from-black/100 to-transparent pointer-events-none z-10"></div>
+
+      <div class="relative z-20 h-full min-h-screen flex items-end pb-8 sm:pb-12 md:pb-16 px-4 sm:px-6 md:px-12">
+        <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between w-full gap-4 sm:gap-6">
+          <div class="text-white">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-2 font-light italic" style="font-family: 'Imperial Script', cursive;">Hisma</h2>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-wide">Desert</h1>
+          </div>
+
+          <div class="flex items-center gap-3 bg-black/50 backdrop-blur-md rounded-full px-3 sm:px-4 py-2">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=48&h=48&fit=crop&crop=face" alt="Jameel - Desert Guide" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-white" loading="lazy">
+            <div class="text-left">
+              <p class="text-white text-xs sm:text-sm font-semibold">Jameel</p>
+              <p class="text-white/80 text-xs">Traveler</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Description Section -->
+    <section class="relative w-full bg-black py-8 sm:py-12 md:py-16 lg:py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-12 mb-6 sm:mb-8 md:mb-12">
+        <p class="text-white text-sm sm:text-base md:text-lg font-light leading-relaxed">
+          The Hisma Desert in Saudi Arabia is a realm of ethereal beauty that captivates the senses. Its vast expanse of golden sand dunes, sculpted by the winds of time, creates a mesmerizing landscape that stretches as far as the eye can see. As the sun sets, painting the sky with vivid hues.
+        </p>
+      </div>
+
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-12">
+        <div class="relative w-full h-48 sm:h-64 md:h-80 lg:h-96 rounded-xl sm:rounded-2xl overflow-hidden group cursor-pointer">
+          <div class="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat transition-transform duration-500 group-hover:scale-105" style="background-image: url('./img/End Picture.jpg')"></div>
+          <div class="absolute inset-0 bg-black/20"></div>
+
+          <div class="relative z-10 h-full flex items-center justify-between px-4 sm:px-6 md:px-8 lg:px-12">
+            <div class="text-white">
+              <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+                Explore<br>Saudi Arabia
+              </h2>
+            </div>
+
+            <button class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center rounded-full border-2 border-white bg-transparent hover:bg-white/20 transition-all duration-300 group-hover:translate-x-2 focus:outline-none focus:ring-2 focus:ring-white/50" aria-label="Explore more">
+              <svg class="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#2a2a2a] text-white py-8 sm:py-10 md:py-12 lg:py-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 md:gap-12">
+          
+          <div class="flex flex-col items-start">
+            <img src="./img/logo.png" class="w-24 sm:w-28 md:w-32 lg:w-40 h-auto mb-2" alt="Saudi Arabia Logo" loading="lazy">
+            <span class="text-xs sm:text-sm tracking-wide text-gray-400"></span>
+          </div>
+
+          <div>
+            <h3 class="text-sm sm:text-base md:text-lg font-semibold mb-3 sm:mb-4 md:mb-6">About</h3>
+            <ul class="space-y-2 sm:space-y-3">
+              <li><a href="#" class="text-xs sm:text-sm md:text-base text-gray-300 hover:text-white transition-colors duration-300">About us</a></li>
+              <li><a href="#" class="text-xs sm:text-sm md:text-base text-gray-300 hover:text-white transition-colors duration-300">Features</a></li>
+              <li><a href="#" class="text-xs sm:text-sm md:text-base text-gray-300 hover:text-white transition-colors duration-300">News & Blogs</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-sm sm:text-base md:text-lg font-semibold mb-3 sm:mb-4 md:mb-6">Contact</h3>
+            <ul class="space-y-2 sm:space-y-3">
+              <li><a href="#" class="text-xs sm:text-sm md:text-base text-gray-300 hover:text-white transition-colors duration-300">Instagram</a></li>
+              <li><a href="#" class="text-xs sm:text-sm md:text-base text-gray-300 hover:text-white transition-colors duration-300">Twitter</a></li>
+              <li><a href="#" class="text-xs sm:text-sm md:text-base text-gray-300 hover:text-white transition-colors duration-300">Facebook</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-sm sm:text-base md:text-lg font-semibold mb-3 sm:mb-4 md:mb-6">Support</h3>
+            <ul class="space-y-2 sm:space-y-3">
+              <li><a href="#" class="text-xs sm:text-sm md:text-base text-gray-300 hover:text-white transition-colors duration-300">FAQs</a></li>
+              <li><a href="#" class="text-xs sm:text-sm md:text-base text-gray-300 hover:text-white transition-colors duration-300">Support Centre</a></li>
+              <li><a href="#" class="text-xs sm:text-sm md:text-base text-gray-300 hover:text-white transition-colors duration-300">Feedback</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function() {
+        'use strict';
+        
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        
+        function toggleTheme() {
+          const body = document.body;
+          const sections = document.querySelectorAll('section');
+          const shadows = document.querySelectorAll('.bg-gradient-to-t, .bg-gradient-to-b');
+          
+          const isLightMode = body.classList.contains('bg-white');
+          
+          if (isLightMode) {
+            // Switch to dark mode
+            body.className = body.className.replace('bg-white text-gray-900', 'bg-gray-900 text-white');
+            sections.forEach(section => {
+              if (section.classList.contains('bg-gray-100')) {
+                section.classList.replace('bg-gray-100', 'bg-black');
+              }
+              section.classList.remove('bg-gray-200');
+            });
+            shadows.forEach(shadow => shadow.classList.remove('opacity-30'));
+            themeIcon.textContent = '🌙';
+          } else {
+            // Switch to light mode
+            body.className = body.className.replace('bg-gray-900 text-white', 'bg-white text-gray-900');
+            sections.forEach(section => {
+              if (section.classList.contains('bg-black')) {
+                section.classList.replace('bg-black', 'bg-gray-100');
+              }
+              if (section.classList.contains('bg-[#040404]')) {
+                section.classList.add('bg-gray-200');
+              }
+            });
+            shadows.forEach(shadow => shadow.classList.add('opacity-30'));
+            themeIcon.textContent = '☀️';
+          }
+        }
+        
+        themeToggle.addEventListener('click', toggleTheme);
+        
+        // Keyboard accessibility
+        themeToggle.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            toggleTheme();
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
