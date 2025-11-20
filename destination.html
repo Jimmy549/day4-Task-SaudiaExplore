@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the best destinations in Saudi Arabia - from ancient heritage sites to modern marvels.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Imperial+Script&display=swap" rel="stylesheet">
+    <link href="src/output.css" rel="stylesheet">
+    <title>Destinations - Saudi Arabia</title>
+  </head>
+
+  <body class="font-[Poppins] bg-gray-900 text-white transition-colors duration-300">
+    <!-- Header with Hero Background -->
+    <header class="relative w-full min-h-screen text-white overflow-hidden">
+      
+      <!-- Background Image -->
+      <div class="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat brightness-[0.3]" style="background-image: url('./img/destination\ bg.jpg')"></div>
+
+      <!-- NAVBAR -->
+      <nav class="relative z-20 flex items-center justify-between px-4 sm:px-6 md:px-8 lg:px-12 py-4 sm:py-6">
+        <!-- LEFT: LOGO -->
+        <div class="flex flex-col items-start relative z-30">
+          <a href="index.html">
+            <img src="./img/logo.png" class="w-16 sm:w-20 md:w-24 lg:w-32 h-auto" alt="Saudi Arabia Logo" loading="lazy">
+          </a>
+        </div>
+
+        <!-- RIGHT: THEME TOGGLE + LINKS -->
+        <div class="flex items-center gap-3 sm:gap-4 md:gap-6 text-sm sm:text-base">
+          <button id="theme-toggle" class="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-white/20 backdrop-blur-md border border-white/30 hover:bg-white/30 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white/50" aria-label="Toggle theme">
+            <svg id="theme-icon" class="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
+              <path id="moon-icon" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"/>
+              <path id="sun-icon" class="hidden" d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"/>
+            </svg>
+          </button>
+
+          <nav class="hidden sm:block" role="navigation">
+            <ul class="flex items-center gap-4 md:gap-6 lg:gap-8">
+              <li><a href="destination.html" class="hover:text-gray-300 transition-colors duration-200 text-sm md:text-base">Destinations</a></li>
+              <li><a href="#members" class="hover:text-gray-300 transition-colors duration-200 text-sm md:text-base">Members</a></li>
+              <li><a href="#gallery" class="hover:text-gray-300 transition-colors duration-200 text-sm md:text-base">Gallery</a></li>
+            </ul>
+          </nav>
+        </div>
+      </nav>
+
+      <!-- HERO TITLE -->
+      <div class="relative z-20 flex flex-col items-center text-center mt-16 sm:mt-20 md:mt-24 lg:mt-32 px-4 sm:px-6">
+        <h1 class="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4 text-white">Destinations</h1>
+        <p class="text-xs xs:text-sm sm:text-base md:text-lg font-normal text-gray-300 max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl mt-2 sm:mt-4 px-2 leading-relaxed">
+          Saudi Arabia is rich in heritage and history. The country is home to hundreds of historically important sites.
+        </p>
+      </div>
+    </header>
+
+   <!-- Best Destinations Section -->
+    <section id="destinations" class="relative w-full bg-black py-12 sm:py-16 md:py-20 lg:py-24">
+      <!-- Header -->
+      <div class="text-center mb-8 sm:mb-12 md:mb-16 px-4">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-3 sm:mb-4 text-white" id="destinations-title">
+          Best Destinations
+        </h1>
+        <p class="text-base sm:text-lg md:text-xl font-light text-gray-300 max-w-2xl md:max-w-3xl mx-auto leading-relaxed" id="destinations-subtitle">
+          Explore the enchanting landscapes of saudi Arabia, from the breathtaking deserts to the stunning coastal shores.
+        </p>
+      </div>
+
+      <!-- Destinations Grid -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-5">
+          
+          <!-- Card 1: Hisma Desert (Tall) -->
+          <article class="destination-card rounded-3xl overflow-hidden relative cursor-pointer md:row-span-2 min-h-[500px] sm:min-h-[600px] group">
+            <img src="./img/Hisma Desert (Tall).jpg" alt="Hisma Desert landscape with golden sand dunes" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/20"></div>
+            
+            <div class="absolute inset-0 p-6 sm:p-8 flex flex-col justify-between">
+
+
+              <!-- Bottom Content -->
+              <div>
+                <h2 class="text-white text-2xl sm:text-3xl font-bold mb-2 sm:mb-3">Hisma Desert</h2>
+                <p class="text-gray-200 text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed">
+                  The hisma desert is a true marvel of nature, and several desert oasis.
+                </p>
+
+                <div class="flex items-center gap-3 mb-3 sm:mb-4">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=48&h=48&fit=crop&crop=face" alt="Wazeem Al Mulk" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-white shadow-lg" loading="lazy">
+                  <div>
+                    <p class="text-white font-semibold text-sm sm:text-base">Wazeem Al Mulk</p>
+                    <p class="text-gray-300 text-xs sm:text-sm">Traveler</p>
+                  </div>
+                </div>
+
+          
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Kafd World Trade Centre (Medium) -->
+          <article class="destination-card rounded-3xl overflow-hidden relative cursor-pointer min-h-[280px] sm:min-h-[300px] group">
+            <img src="./img/Kafd World Trade Centre (Medium).jpg" alt="Modern skyscrapers in Riyadh" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/20"></div>
+            
+            <div class="absolute inset-0 p-6 sm:p-8 flex flex-col justify-between">
+
+
+              <div>
+                <h1 class="text-white text-xl sm:text-2xl font-bold mb-2 sm:mb-3">Kafd World Trade Centre, Riyadh.</h1>
+                <p class="text-gray-200 text-xs sm:text-sm mb-4 sm:mb-6 leading-relaxed">
+                  The Towering Structure stands as a testament to Saudi Arabia vision for a thriving business hub.
+                </p>
+
+                <div class="flex items-center gap-3 mb-3 sm:mb-4">
+                  <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=48&h=48&fit=crop&crop=face" alt="Benjamin Voros" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-white shadow-lg" loading="lazy">
+                  <div>
+                    <p class="text-white font-semibold text-sm sm:text-base">Benjamin Voros</p>
+                    <p class="text-gray-300 text-xs sm:text-sm">Traveler</p>
+                  </div>
+                </div>
+
+          
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Al Qarah Mountain (Tall) -->
+          <article class="destination-card rounded-3xl overflow-hidden relative cursor-pointer md:row-span-2 min-h-[500px] sm:min-h-[600px] group">
+            <img src="./img/Al Qarah Mountain.jpg" alt="Al Qarah Mountain rock formations" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/20"></div>
+            
+            <div class="absolute inset-0 p-6 sm:p-8 flex flex-col justify-between">
+
+
+              <div>
+                <h2 class="text-white text-2xl sm:text-3xl font-bold mb-2 sm:mb-3">Al Qarah Mountain</h2>
+                <p class="text-gray-200 text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed">
+                  The Mountain distractive rocks formations inviting adventures to explore its hidden treasure.
+                </p>
+
+                <div class="flex items-center gap-3 mb-3 sm:mb-4">
+                  <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=48&h=48&fit=crop&crop=face" alt="John Towner" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-white shadow-lg" loading="lazy">
+                  <div>
+                    <p class="text-white font-semibold text-sm sm:text-base">John Towner</p>
+                    <p class="text-gray-300 text-xs sm:text-sm">Traveler</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: AlUla (Tall Center) -->
+          <article class="destination-card rounded-3xl overflow-hidden relative cursor-pointer md:row-span-2 min-h-[500px] sm:min-h-[600px] group">
+            <img src="./img/AlUla (Tall Center).jpg" alt="AlUla desert landscape at night" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/20"></div>
+            
+            <div class="absolute inset-0 p-6 sm:p-8 flex flex-col justify-between">
+
+              <div>
+                <h2 class="text-white text-2xl sm:text-3xl font-bold mb-2 sm:mb-3">AlUla</h2>
+                <p class="text-gray-200 text-sm sm:text-base mb-4 sm:mb-6 leading-relaxed">
+                  AlUla is Located deep in the desert in the northwest of Saudi Arabia
+                </p>
+
+                <div class="flex items-center gap-3 mb-3 sm:mb-4">
+                  <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=48&h=48&fit=crop&crop=face" alt="garrett parker" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-white shadow-lg" loading="lazy">
+                  <div>
+                    <p class="text-white font-semibold text-sm sm:text-base">garrett parker</p>
+                    <p class="text-gray-300 text-xs sm:text-sm">Traveler</p>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: The best of Tabuk (Medium) -->
+          <article class="destination-card rounded-3xl overflow-hidden relative cursor-pointer min-h-[280px] sm:min-h-[300px] group">
+            <img src="./img/The best of Tabuk.jpg" alt="Tabuk city sunset view" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/20"></div>
+            
+            <div class="absolute inset-0 p-6 sm:p-8 flex flex-col justify-between">
+
+              <div>
+                <h2 class="text-white text-xl sm:text-2xl font-bold mb-2 sm:mb-3">The best of Tabuk</h2>
+                <p class="text-gray-200 text-xs sm:text-sm mb-4 sm:mb-6 leading-relaxed" >
+                  Tabuk Also spelled Tabuk, the capital city of the Tabuk Region in northwestern Saudi Arabia.
+                </p>
+
+                <div class="flex items-center gap-3 mb-3 sm:mb-4">
+                  <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?w=48&h=48&fit=crop&crop=face" alt="Jonatan Pie" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-white shadow-lg" loading="lazy">
+                  <div>
+                    <p class="text-white font-semibold text-sm sm:text-base">Jonatan Pie</p>
+                    <p class="text-gray-300 text-xs sm:text-sm">Influencer</p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: The best things To do in Taif (Medium) -->
+          <article class="destination-card rounded-3xl overflow-hidden relative cursor-pointer min-h-[280px] sm:min-h-[300px] group">
+            <img src="./img/al huda mountain.jpg" alt="Taif city night lights" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/20"></div>
+            
+            <div class="absolute inset-0 p-6 sm:p-8 flex flex-col justify-between">
+
+              <div>
+                <h2 class="text-white text-xl sm:text-2xl font-bold mb-2 sm:mb-3">The best things To do in Taif</h2>
+                <p class="text-gray-200 text-xs sm:text-sm mb-4 sm:mb-6 leading-relaxed">
+                  Taif is a city and governorate in the Makkah Region of Saudi Arabia.
+                </p>
+
+                <div class="flex items-center gap-3 mb-3 sm:mb-4">
+                  <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=48&h=48&fit=crop&crop=face" alt="Cristina Gottardi" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover border-2 border-white shadow-lg" loading="lazy">
+                  <div>
+                    <p class="text-white font-semibold text-sm sm:text-base">Cristina Gottardi</p>
+                    <p class="text-gray-300 text-xs sm:text-sm">Traveler</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- WhatsApp Contact Section -->
+<section class="w-full bg-black py-10 sm:py-12 md:py-14">
+  <div class="max-w-7xl mx-auto px-1 sm:px-1.5 md:px-3">
+
+    <div
+      class="w-full rounded-full bg-[#0e7a0d] relative flex flex-wrap items-center justify-between gap-4 
+      px-4 sm:px-6 md:px-10 lg:px-14 py-6 sm:py-8 md:py-12 lg:py-14 shadow-2xl"
+      style="
+        background: linear-gradient(145deg, #0f8a0f, #0b680c);
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4),
+                    inset 4px 4px 12px rgba(255, 255, 255, 0.15),
+                    inset -4px -4px 12px rgba(0, 0, 0, 0.3);
+      "
+    >
+      <!-- Left Text -->
+      <h3 class="text-white text-sm sm:text-lg md:text-xl lg:text-2xl font-semibold tracking-wide">
+        Contact us on Whatsapp
+      </h3>
+
+      <!-- Right Button -->
+      <a
+        href="#"
+        class="bg-white text-black text-xs sm:text-sm md:text-base font-medium py-2 sm:py-2.5 px-4 sm:px-5 md:px-6 
+        rounded-full shadow-md hover:shadow-lg transition-all duration-300 whitespace-nowrap"
+      >
+        Start Chat
+      </a>
+    </div>
+
+  </div>
+</section>
+    <!-- Description Section -->
+    <section class="relative w-full bg-black py-8 sm:py-12 md:py-16 lg:py-20">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-12 mb-6 sm:mb-8 md:mb-12">
+      </div>
+
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-12">
+        <div class="relative w-full h-48 sm:h-64 md:h-80 lg:h-96 rounded-xl sm:rounded-2xl overflow-hidden group cursor-pointer">
+          <div class="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat transition-transform duration-500 group-hover:scale-105" style="background-image: url('./img/neom.jpg')"></div>
+          <div class="absolute inset-0 bg-black/20"></div>
+
+          <div class="relative z-10 h-full flex items-center justify-between px-4 sm:px-6 md:px-8 lg:px-12">
+            <div class="text-white">
+              <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+                Made To Change<br>NEOM
+              </h2>
+            </div>
+
+            <button class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 flex items-center justify-center rounded-full border-2 border-white bg-transparent hover:bg-white/20 transition-all duration-300 group-hover:translate-x-2 focus:outline-none focus:ring-2 focus:ring-white/50" aria-label="Explore more">
+              <svg class="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#2a2a2a] text-white py-8 sm:py-10 md:py-12 lg:py-16">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 md:gap-12">
+          
+          <div class="flex flex-col items-start">
+            <img src="./img/logo.png" class="w-24 sm:w-28 md:w-32 lg:w-40 h-auto mb-2" alt="Saudi Arabia Logo" loading="lazy">
+            
+          </div>
+
+          <div>
+            <h3 class="text-sm sm:text-base md:text-lg font-semibold mb-3 sm:mb-4 md:mb-6">About</h3>
+            <ul class="space-y-2 sm:space-y-3">
+              <li><a href="about.html" class="text-xs sm:text-sm md:text-base text-gray-300 hover:text-white transition-colors duration-300">About us</a></li>
+              <li><a href="#" class="text-xs sm:text-sm md:text-base text-gray-300 hover:text-white transition-colors duration-300">Features</a></li>
+              <li><a href="#" class="text-xs sm:text-sm md:text-base text-gray-300 hover:text-white transition-colors duration-300">News & Blogs</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-sm sm:text-base md:text-lg font-semibold mb-3 sm:mb-4 md:mb-6">Contact</h3>
+            <ul class="space-y-2 sm:space-y-3">
+              <li><a href="#" class="text-xs sm:text-sm md:text-base text-gray-300 hover:text-white transition-colors duration-300">Instagram</a></li>
+              <li><a href="#" class="text-xs sm:text-sm md:text-base text-gray-300 hover:text-white transition-colors duration-300">Twitter</a></li>
+              <li><a href="#" class="text-xs sm:text-sm md:text-base text-gray-300 hover:text-white transition-colors duration-300">Facebook</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="text-sm sm:text-base md:text-lg font-semibold mb-3 sm:mb-4 md:mb-6">Support</h3>
+            <ul class="space-y-2 sm:space-y-3">
+              <li><a href="#" class="text-xs sm:text-sm md:text-base text-gray-300 hover:text-white transition-colors duration-300">FAQs</a></li>
+              <li><a href="#" class="text-xs sm:text-sm md:text-base text-gray-300 hover:text-white transition-colors duration-300">Support Centre</a></li>
+              <li><a href="#" class="text-xs sm:text-sm md:text-base text-gray-300 hover:text-white transition-colors duration-300">Feedback</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      (function() {
+        'use strict';
+        
+        const themeToggle = document.getElementById('theme-toggle');
+        const moonIcon = document.getElementById('moon-icon');
+        const sunIcon = document.getElementById('sun-icon');
+        const body = document.body;
+        
+        // Check for saved theme preference or default to 'dark'
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        
+        // Apply the current theme
+        function applyTheme(theme) {
+          const destinationsSection = document.getElementById('destinations');
+          const destinationsTitle = document.getElementById('destinations-title');
+          const destinationsSubtitle = document.getElementById('destinations-subtitle');
+          const whatsappSection = document.querySelector('section:has([class*="25D366"])');
+          
+          if (theme === 'light') {
+            // Light mode
+            body.className = 'font-[Poppins] bg-white text-gray-900 transition-colors duration-300';
+            document.documentElement.classList.remove('dark');
+            
+            // Update sections
+            if (destinationsSection) {
+              destinationsSection.className = destinationsSection.className.replace('bg-black', 'bg-gray-50');
+            }
+            if (destinationsTitle) {
+              destinationsTitle.className = destinationsTitle.className.replace('text-white', 'text-gray-900');
+            }
+            if (destinationsSubtitle) {
+              destinationsSubtitle.className = destinationsSubtitle.className.replace('text-gray-300', 'text-gray-600');
+            }
+            if (whatsappSection) {
+              whatsappSection.className = whatsappSection.className.replace('bg-black', 'bg-gray-50');
+            }
+            
+            // Update theme toggle button
+            themeToggle.className = themeToggle.className.replace('bg-white/20 border-white/30', 'bg-gray-900/20 border-gray-900/30');
+            
+            // Update icons
+            moonIcon.classList.add('hidden');
+            sunIcon.classList.remove('hidden');
+          } else {
+            // Dark mode
+            body.className = 'font-[Poppins] bg-gray-900 text-white transition-colors duration-300';
+            document.documentElement.classList.add('dark');
+            
+            // Update sections
+            if (destinationsSection) {
+              destinationsSection.className = destinationsSection.className.replace('bg-gray-50', 'bg-black');
+            }
+            if (destinationsTitle) {
+              destinationsTitle.className = destinationsTitle.className.replace('text-gray-900', 'text-white');
+            }
+            if (destinationsSubtitle) {
+              destinationsSubtitle.className = destinationsSubtitle.className.replace('text-gray-600', 'text-gray-300');
+            }
+            if (whatsappSection) {
+              whatsappSection.className = whatsappSection.className.replace('bg-gray-50', 'bg-black');
+            }
+            
+            // Update theme toggle button
+            themeToggle.className = themeToggle.className.replace('bg-gray-900/20 border-gray-900/30', 'bg-white/20 border-white/30');
+            
+            // Update icons
+            moonIcon.classList.remove('hidden');
+            sunIcon.classList.add('hidden');
+          }
+        }
+        
+        // Initialize theme
+        applyTheme(currentTheme);
+        
+        // Theme toggle event listener
+        themeToggle.addEventListener('click', () => {
+          const isLight = body.classList.contains('bg-white');
+          const newTheme = isLight ? 'dark' : 'light';
+          
+          applyTheme(newTheme);
+          localStorage.setItem('theme', newTheme);
+        });
+        
+        // Keyboard accessibility
+        themeToggle.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            const isLight = body.classList.contains('bg-white');
+            const newTheme = isLight ? 'dark' : 'light';
+            
+            applyTheme(newTheme);
+            localStorage.setItem('theme', newTheme);
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>
